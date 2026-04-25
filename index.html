@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aiden Thomas – Computer Engineering student at UF, Teaching Assistant, and developer specializing in C, C++, Python, and systems programming.">
+    <meta name="keywords" content="Aiden Thomas, Computer Engineering, UF, C++, Python, software developer, teaching assistant">
+    <meta name="author" content="Aiden Thomas">
+    <title>Aiden Thomas</title>
+    <link href="./css/98.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <meta property="og:title" content="Aiden Thomas | Computer Engineer & Developer">
+    <meta property="og:description" content="Portfolio of Aiden Thomas – UF Computer Engineering student, TA, and systems developer.">
+    <meta property="og:url" content="https://starprograms.dev">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://starprograms.dev">
+<audio id="myAudio">
+  <source src="./data/windows-98-error.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<script>
+	var x = document.getElementById("myAudio"); 
+	
+	function playAudio() { 
+	  x.play(); 
+	} 
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aiden Thomas",
+  "url": "https://starprograms.dev",
+  "jobTitle": "Computer Engineering Student & Teaching Assistant",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "University of Florida"
+  },
+  "sameAs": [
+    "https://linkedin.com/in/aiden-programs",
+    "https://codeberg.org"
+  ]
+}
+</script>
+  </head>
+  <body id="body">
+    <div>
+    </div>
+    <div id="introduction" class="window" style="margin: 32px; width: 250px" onmouseup="moveIntroEnd()">
+      <div class="title-bar" onmousedown="moveIntroStart()">
+        <div class="title-bar-text">
+            Introduction
+        </div>
+
+        <div class="title-bar-controls">
+          <button aria-label="Close" onclick="toggle(intro)"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <p id = "hello">Hello, world!</p>
+        <p>I'm <b>Aiden Thomas</b></p>
+        <!-- <div class="field-row">
+
+          <label for="text17">Occupation</label>
+          <select onchange="changeData(this.value)">
+            <option>click me!</option>
+            <option>Programmer</option>
+            <option>About Me</option>
+            <option>Socials</option>
+            <option>DoomGuy</option>
+          </select>
+        </div>
+        --> 
+        <section class="field-row" style="justify-content: flex-end">
+          <button value="sound" onclick="playAudio()">OK</button>
+          <button value="sound" onclick="playAudio()">Cancel</button>
+        </section>
+      </div>
+    </div>
+    
+<div id="chatroom" class="window" style="margin: 32px; width: 324px" onmouseup="moveChatroomEnd()">
+      <div class="title-bar" onmousedown="moveChatroomStart()">
+        <div class="title-bar-text">
+            Guestbook
+        </div>
+
+        <div class="title-bar-controls">
+          <button aria-label="Close" onclick="toggle(chatroom)"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <ul class="tree-view">
+	    <li>
+         
+        <iframe src="./chatroom/index.php" title="chatroom" height="200" width="300" style="border: none;"></iframe>
+        
+        </li>
+        </ul>
+
+        <!-- <div class="field-row">
+
+          <label for="text17">Occupation</label>
+          <select onchange="changeData(this.value)">
+            <option>click me!</option>
+            <option>Programmer</option>
+            <option>About Me</option>
+            <option>Socials</option>
+            <option>DoomGuy</option>
+          </select>
+        </div>
+        --> 
+      </div>
+    </div>
+
+
+  <div id="programmer" class="window prog" style="margin: 32px; width: 300px" onmouseup="moveProgramEnd()">
+      <div class="title-bar" onmousedown="moveProgramStart()" >
+        <div class="title-bar-text">
+            Programmer
+        </div>
+
+        <div class="title-bar-controls">
+          <button aria-label="Close" onclick="toggle(program)"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <p>Here are some of my <b>Projects</b></p>
+          <ul class="tree-view">
+	    <li>
+	      My Journey to Protecting my Data
+	      <ul>
+	       <li>
+		<details>
+			<summary>
+				Click to Show
+			</summary>
+      Learning about corporate data exploitation, I couldn't accept companies stealing my information to sell targeted products.
+      <br><br>
+      My privacy journey began in high school when I bought my first domain, Starprograms.dev, and built websites using GitHub Pages to understand DNS and web hosting.
+      <br><br>
+      When Google raised prices and added AI to their platform, I switched to Proton for email and LibreOffice for documents. In 2022, I found a Dell Optiplex for $125 at a computer surplus store, initially for malware testing but later repurposed as an Apache server in 2024.
+      <br><br>
+      That year I also set up Tailscale VPN, which became crucial for networking services together. I integrated CloudFlare Tunnels to securely access my server's TCP ports over HTTPS.
+      <br><br>
+      In 2025, concerned about Mozilla adding AI to Firefox, I moved from Firefox's password manager to self-hosted Vault Warden, setting up a daily cron job to restart it due to crashes.
+      <br><br>
+			I would say, throughout this endeavor, key points to remember would be:
+			<ul>
+				<li>
+					Reducing and protecting your digital footprint takes time, patience, and study. It won't be a single one and done project.
+				</li>
+				<li>
+					Cloudflares reverse proxies and tunnels are the greatest software created to get around networks that are not controlled by yourself.
+				</li>
+				<li>
+					everything costs money, especially when it comes to protecting your data.
+				</li>
+			</ul>
+      Thanks for reading!
+
+		</details>
+	       </li>
+	      </ul>
+	    </li>
+                    <li>
+              Projects
+              <ul>
+<li><details>
+                <summary>Mini-Vim</summary>
+                <ul>
+                  <li>Built in C++</li>
+                  <li><details>
+                   <summary>Notable Features</summary> 
+                    <ul>
+                      <li>
+                        Hijacked Terminal /w Cross platform support
+                      </li>
+                      <li>
+                        Currently being used in the classroom setting
+                      </li>
+                      <li>
+                        Utilized advanced datastructures to store text optimally
+                      </li>
+                    </ul>
+                  </details></li> 
+                  <li>
+                    <a href="https://codeberg.org/starprograms/mini-vim" target="_blank"><button>CodeBerg (github)</button></a>
+                  </li>
+                </ul>
+              </details>
+</li>
+
+              <li><details>
+                <summary>little-C Interpreter</summary>
+                <ul>
+                  <li>Built in C++</li>
+                  <li><details>
+                   <summary>Notable Features</summary> 
+                    <ul>
+                      <li>
+                        automatic scoping
+                      </li>
+                      <li>
+                        working parsing and lexing
+                      </li>
+                      <li>
+                        utilizes multiple data types
+                      </li>
+                    </ul>
+                  </details></li> 
+                  <li>
+                    <a href="https://codeberg.org/starprograms/littleC" target="_blank"><button>CodeBerg (github)</button></a>
+                  </li>
+                </ul>
+              </details>
+              </li>
+                <li><details>
+                <summary>BrainFuck Interpreter</summary>
+                <ul>
+                  <li>Built in C</li>
+                  <li><details>
+                   <summary>Notable Features</summary> 
+                    <ul>
+                      <li>
+                        Working IO
+                      </li>
+                      <li>
+                        Used in a capture the flag challenge
+                      </li>
+                      <li>
+                        Recursive
+                      </li>
+                    </ul>
+                  </details></li> 
+                  <li>
+                    <a href="https://codeberg.org/starprograms/Brainf-ck" target="_blank"><button>CodeBerg (github)</button></a>
+                  </li>
+                </ul>
+              </details>
+</li>
+                <li><details>
+                <summary>Cheating Go-Fish Bot</summary>
+                <ul>
+                  <li>Built in Python</li>
+                  <li><details>
+                   <summary>Notable Features</summary> 
+                    <ul>
+                      <li>
+                        Utilizes a string quirk of the python Interpreter to pull data from a class object without knowing the variables before hand.
+                      </li>
+                      <li>
+                        Used to teach students python classes
+                      </li>
+                      <li>
+                        Go-Fish
+                      </li>
+                    </ul>
+                  </details></li> 
+                  <li>
+                    <a href="https://codeberg.org/starprograms/CheatingGoFish" target="_blank"><button>CodeBerg (github)</button></a>
+                  </li>
+                </ul>
+              </details></li>
+              </ul>
+          </ul>
+        <section class="field-row" style="justify-content: flex-end">
+        </section>
+      </div>
+    </div>
+
+
+
+  <div id="teacher" class="window teach" style="margin: 32px; width: 390px" onmouseup="moveTeachEnd()">
+      <div class="title-bar" onmousedown="moveTeachStart()" >
+        <div class="title-bar-text">
+            Socials
+        </div>
+
+        <div class="title-bar-controls">
+          <button aria-label="Close" onclick="toggle(teach)"></button>
+        </div>
+      </div>
+      <div class="window-body">
+         <fieldset>
+          <legend>Socials</legend>
+          <a href="https://codeberg.org/starprograms" target="_blank"><button>CodeBerg (github)</button></a>
+          <a href="https://www.linkedin.com/in/aiden-programs" target="_blank"><button>linked-in</button></a>
+	  <a href="mailto:thomas.aiden@starprograms.dev" target="_blank"><button>E-mail</button></a>
+          <a href="./Aiden_Thomas__Resume.pdf" target="_blank"><button>Resume</button></a>
+
+         </fieldset> 
+        <section class="field-row" style="justify-content: flex-end">
+        </section>
+      </div>
+    </div>
+    <div class="window" id="aero_ring" style="margin: 32px; position: absolute; left: 846px; top: 400px;" onmouseup="moveRingEnd()">
+      <div class="title-bar" onmousedown="moveRingStart()" >
+        <div class="title-bar-text">
+            Webring
+        </div>
+
+        <div class="title-bar-controls">
+          <button aria-label="Close" onclick="toggle(ring)"></button>
+        </div>
+      </div>
+      <div id="aero-ring">
+      
+      </div>
+    </div> 
+    
+
+  <div id="rules" class="window rule hidden" style="margin: 32px; width: 300px;" onmouseup="moverulesEnd()">
+      <div class="title-bar" onmousedown="moverulesStart()" >
+        <div class="title-bar-text">
+            Rules
+        </div>
+
+        <div class="title-bar-controls">
+          <button aria-label="Close" onclick="toggleRules()"></button>
+        </div>
+      </div>
+      <div class="window-body">
+         <fieldset>
+          <legend><b>Beware The Tower</b></legend>
+            <p>The tower seeks to stop your beating heart before you make it to the end</p>
+            </br>
+            <p><b>The cards are the Key</b></p>
+            <p>your cards can keep you safe</p>
+          <p>the <b>campfire</b> can help <b>soothe your fear of the dark</b>, but bewarned,</p>
+          <p>to attack one with fire, is the same as <b> attacking yourself </b></p>
+          <p>the <b>holy sword</b> can be your sword and your shield, but you might <b>lose track of time</b> 
+          <p>to raise the <b>flag</b> is to <b>boister your army</b> to ravage this land, or to <b>call on a stronger defense</b></p>
+          <p>to read your <b>heart</b> is seen as reading a book, though it <b>aids</b> you it can also <b>ail</b> you.</p>
+          <p>If you <b>give your heart to the tower</b> sometimes the <b>tower gives itself back</b></p> 
+         </fieldset> 
+        <section class="field-row" style="justify-content: flex-end">
+        </section>
+      </div>
+    </div>
+
+
+
+  <div id="game" class="window game" style="margin: 32px; width: 300px" onmouseup="moveGameEnd()">
+      <div class="title-bar" onmousedown="moveGameStart()" >
+        <div class="title-bar-text">
+            Game
+        </div>
+
+        <div class="title-bar-controls">
+          <button aria-label="Close" onclick="toggle(game)"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <canvas id="doom" >
+
+        
+        </canvas>
+        
+        <section class="field-row" style="justify-content: flex-end">
+            <button onclick="toggleRules()">Rules</button>
+          <button onclick="myEnemy.revealHand('defense', myPlayer)">Submit Defense</button>
+            <button onclick="myEnemy.revealHand('offense', myPlayer)">Submit Offense</button>
+        </section>
+      </div>
+    </div>
+    
+
+
+   <div style="position:absolute;right:0; bottom:0;">
+   	
+	<img src="data/censorship.gif" alt="https://cyber.dabamos.de/88x31/">
+	 <map name="noaimini14">
+<area href="https://baccyflap.com/noai" shape="rect" coords="21,0,47,30" target="_blank" alt="no ai webring" title="no ai webring">
+<area href="https://baccyflap.com/noai/?prv&s=stp" target="_top" shape="rect" coords="1,13,19,29" alt="previous" title="previous">
+<area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="59,7,66,16" alt="random" title="random">
+<area href="https://baccyflap.com/noai/?nxt&s=stp" target="_top" shape="rect" coords="68,1,86,17" alt="next" title="next">
+</map>
+<img usemap="#noaimini14" src="https://baccyflap.com/noai/miniwidget14.gif" alt="a bluegreen rectangle showing the words the NO AI webring, with NO AI being written by a fountain pen, all in the style of 16 bit Windows 95 icons. to either side are two equally Windows-95-style cursors pointing left and right, softly bouncing up and down. in between it all is a small black question mark"> 
+	<br/>
+	<img src="data/made_with_windows.gif" alt="https://88x31.kate.pet/">
+ 	<a href="https://frutigeraeroarchive.org/"><img src="https://frutigeraeroarchive.org/images/buttons/frutigeraeroarchive_button_alt.png" alt="Frutiger Aero Archive"></a>
+ 	<!-- 
+    Note: the webring container is only here for demonstration purposes. If
+    this is on a webpage with a dark background, this should not be nesseceary.
+
+    The text-decoration can also be disabled in another way for these links,
+    this is just for copy, paste, works without additional CSS :)
+-->
+<div
+    class="webring-container"
+    style="
+        background: #0d7173;
+        width: fit-content;
+        padding: 5px;
+        display: inline-block;
+    "
+>
+    <a href="//ring.acab.dev/prev/fb484138fb" style="text-decoration: none">
+        <img
+            style="image-rendering: pixelated" 
+            src="//ring.acab.dev/img/webring_88_31_01.png" 
+            alt="The first third of a 88x31 with a glider and arrow going to
+            the left"
+        />
+    </a>
+    <a href="//ring.acab.dev" style="text-decoration: none">
+        <img
+            style="image-rendering: pixelated"
+            src="//ring.acab.dev/img/webring_88_31_02.png"
+            alt="The middle third of a 88x31 with the text Hacker Webring on
+            it. In the background of the text is a ring with an offset shadow."
+        />
+    </a>
+    <a href="//ring.acab.dev/next/fb484138fb" style="text-decoration: none">
+        <img
+            style="image-rendering: pixelated"
+            src="//ring.acab.dev/img/webring_88_31_03.png"
+            alt="The last third of a 88x31 with a glider and arrow going to the
+            right"
+        />
+    </a>
+</div>
+ 	<img src="data/word.gif" alt="https://cyber.dabamos.de/88x31/">
+   </div>
+  </body>
+    <script src="https://frutigeraeroarchive.org/javascript/aero-webring.js"></script>
+    <script src="./shmovemnt.js"></script>
+    <script src="./data.js"></script>
+    <script src="./game.js" defer></script>
+    <style>
+      
+
+      #aero-ring a,
+      #aero-ring a:visited {
+        display: flex !important;
+        justify-content: center !important;
+        text-align:center !important;
+        
+        box-sizing: border-box;
+        color: black !important;
+        text-decoration: none !important;
+        box-sizing: border-box;
+        border: none;
+        background: #c0c0c0;
+        box-shadow: inset -1px -1px #0a0a0a,
+          inset 1px 1px #ffffff, inset -2px -2px #808080,
+          inset 2px 2px #dfdfdf;
+        border-radius: 0;
+
+        min-width: 75px;
+        min-height: 23px;
+        
+        padding: 0 12px;
+      }
+
+      #aero-ring a:not(:disabled):active {
+        box-shadow: inset -1px -1px #ffffff,
+          inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf,
+          inset 2px 2px #808080;
+      }
+
+      #aero-ring a:focus {
+        outline: 1px dotted #000000;
+        outline-offset: -4px;
+      }
+
+      
+    </style>
+</html>

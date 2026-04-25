@@ -1,0 +1,44 @@
+#username{
+	text-decoration:underline;
+}
+.user{
+	color: red;
+}
+.other{
+	color:blue;
+}
+.system{
+	color:black;
+}
+
+.button{
+	width:100%;
+	height:100%;
+	border:none;
+	background-color:transparent;
+}
+.no_border{
+	border:none;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.invisible{
+	border:none;
+	display:none;
+}
+
+#chat{
+	color: black;
+}
+
+#enter_chatroom{
+	position:absolute;
+   	bottom:0;
+   	width:90%;
+   	height:60px;
+}
+.lower{
+   	bottom:0;
+   	width:90%;
+   	height:auto;
+}
