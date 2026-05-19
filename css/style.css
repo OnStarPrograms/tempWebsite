@@ -46,7 +46,7 @@ body{
 }
 
 
-#teacher{
+#socials{
   position: absolute;
   left: 260px;
   top: 50px;
@@ -89,11 +89,11 @@ body{
   position: absolute;
   left: 0px;
   top: 200px;
-  animation-name: teacher_anim;
+  animation-name: socials_anim;
   animation-duration: 1s;
   /*animation-delay: .5s;*/
 }
-#teacher{
+#socials{
   position: absolute;
   left: 0px;
   top: 550px;

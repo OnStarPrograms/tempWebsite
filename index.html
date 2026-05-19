@@ -46,14 +46,14 @@
   <body id="body">
     <div>
     </div>
-    <div id="introduction" class="window" style="margin: 32px; width: 250px" onmouseup="moveIntroEnd()">
-      <div class="title-bar" onmousedown="moveIntroStart()">
+    <div id="introduction" class="window" style="margin: 32px; width: 250px" >
+      <div class="title-bar" onmousedown="callBack('introduction')">
         <div class="title-bar-text">
             Introduction
         </div>
 
         <div class="title-bar-controls">
-          <button aria-label="Close" onclick="toggle(intro)"></button>
+          <button aria-label="Close" onclick="toggle('introduction')"></button>
         </div>
       </div>
       <div class="window-body">
@@ -78,14 +78,14 @@
       </div>
     </div>
     
-<div id="chatroom" class="window" style="margin: 32px; width: 324px" onmouseup="moveChatroomEnd()">
-      <div class="title-bar" onmousedown="moveChatroomStart()">
+<div id="chatroom" class="window" style="margin: 32px; width: 324px">
+      <div class="title-bar" onmousedown="callBack('chatroom')">
         <div class="title-bar-text">
             Guestbook
         </div>
 
         <div class="title-bar-controls">
-          <button aria-label="Close" onclick="toggle(chatroom)"></button>
+          <button aria-label="Close" onclick="toggle('chatroom')"></button>
         </div>
       </div>
       <div class="window-body">
@@ -113,55 +113,52 @@
     </div>
 
 
-  <div id="programmer" class="window prog" style="margin: 32px; width: 300px" onmouseup="moveProgramEnd()">
-      <div class="title-bar" onmousedown="moveProgramStart()" >
+  <div id="programmer" class="window prog" style="margin: 32px; width: 300px" >
+      <div class="title-bar" onmousedown="callBack('programmer')" >
         <div class="title-bar-text">
             Programmer
         </div>
 
         <div class="title-bar-controls">
-          <button aria-label="Close" onclick="toggle(program)"></button>
+          <button aria-label="Close" onclick="toggle('programmer')"></button>
         </div>
       </div>
       <div class="window-body">
-        <p>Here are some of my <b>Projects</b></p>
+        <p>Here are some of my <b>Thoughts</b></p>
           <ul class="tree-view">
-	    <li>
-	      My Journey to Protecting my Data
-	      <ul>
-	       <li>
-		<details>
-			<summary>
-				Click to Show
-			</summary>
-      Learning about corporate data exploitation, I couldn't accept companies stealing my information to sell targeted products.
-      <br><br>
-      My privacy journey began in high school when I bought my first domain, Starprograms.dev, and built websites using GitHub Pages to understand DNS and web hosting.
-      <br><br>
-      When Google raised prices and added AI to their platform, I switched to Proton for email and LibreOffice for documents. In 2022, I found a Dell Optiplex for $125 at a computer surplus store, initially for malware testing but later repurposed as an Apache server in 2024.
-      <br><br>
-      That year I also set up Tailscale VPN, which became crucial for networking services together. I integrated CloudFlare Tunnels to securely access my server's TCP ports over HTTPS.
-      <br><br>
-      In 2025, concerned about Mozilla adding AI to Firefox, I moved from Firefox's password manager to self-hosted Vault Warden, setting up a daily cron job to restart it due to crashes.
-      <br><br>
-			I would say, throughout this endeavor, key points to remember would be:
-			<ul>
-				<li>
-					Reducing and protecting your digital footprint takes time, patience, and study. It won't be a single one and done project.
-				</li>
-				<li>
-					Cloudflares reverse proxies and tunnels are the greatest software created to get around networks that are not controlled by yourself.
-				</li>
-				<li>
-					everything costs money, especially when it comes to protecting your data.
-				</li>
-			</ul>
-      Thanks for reading!
+      <li>
+        Hey, been a while since I updated this website. I'll start including a changelog :/.
+        <details>
+          <summary>
+            ChangeLog
+          </summary>
+          <ul>
+            <li>May 19, 2026: revamped the <b><a href="./js/shmovement.js">shmovement.js</a></b> to be a lot easier on system resources and smarter. A-lot smarter than the old <b><a href="./archive/old_shmovemnt.js">shmovement.js</a></b></li>
+          </ul>
+        </details>
+        <details>
+          <summary>
+            Plans
+          </summary>
+          <ul>
+            <li>Build a better <b><a href="./js/game.js">game.js</a></b> modeled after <b><a href="https://en.wikipedia.org/wiki/Durak" target="_blank">Durak</a></b></li>
+            <li>Make this site look a little more Windows 95 -esk, maybe add a task bar with some functionality, such as minesweeper.</li>
+            <li>Scaling pages, god those are needed. Esp. with computers w/ higher DPI</li>
+            <li>Add multiplayer functionality to something. most likely a game thats asyncronous, and syncronous. Need to practice my sys-architecture</li>
+          </ul>
+        </details>
+      </li>
+      <p>  
 
-		</details>
-	       </li>
-	      </ul>
-	    </li>
+        My internship is not what I've been expecting, it's definitely a change in pace from when I first started my journey with programming. 
+      <br>
+       Mental state has also been in a fairly steep decline lately, IDK how to say, but, lonely(?). I don't really have many friends, and the friends I do have are all gone. 
+      <br>
+        <br>
+        Otherwise, Keep working hard stranger. I believe in you.
+      </p>
+	    
+
                     <li>
               Projects
               <ul>
@@ -270,14 +267,14 @@
 
 
 
-  <div id="teacher" class="window teach" style="margin: 32px; width: 390px" onmouseup="moveTeachEnd()">
-      <div class="title-bar" onmousedown="moveTeachStart()" >
+  <div id="socials" class="window socials" style="margin: 32px; width: 390px">
+      <div class="title-bar" onmousedown="callBack('socials')" >
         <div class="title-bar-text">
             Socials
         </div>
 
         <div class="title-bar-controls">
-          <button aria-label="Close" onclick="toggle(teach)"></button>
+          <button aria-label="Close" onclick="toggle('socials')"></button>
         </div>
       </div>
       <div class="window-body">
@@ -293,14 +290,14 @@
         </section>
       </div>
     </div>
-    <div class="window" id="aero_ring" style="margin: 32px; position: absolute; left: 846px; top: 400px;" onmouseup="moveRingEnd()">
-      <div class="title-bar" onmousedown="moveRingStart()" >
+    <div class="window" id="aero_ring" style="margin: 32px; position: absolute; left: 846px; top: 400px;" >
+      <div class="title-bar" onmousedown="callBack('aero_ring')" >
         <div class="title-bar-text">
             Webring
         </div>
 
         <div class="title-bar-controls">
-          <button aria-label="Close" onclick="toggle(ring)"></button>
+          <button aria-label="Close" onclick="toggle('aero_ring')"></button>
         </div>
       </div>
       <div id="aero-ring">
@@ -341,13 +338,13 @@
 
 
   <div id="game" class="window game" style="margin: 32px; width: 300px" onmouseup="moveGameEnd()">
-      <div class="title-bar" onmousedown="moveGameStart()" >
+      <div class="title-bar" onmousedown="callBack('game')" >
         <div class="title-bar-text">
             Game
         </div>
 
         <div class="title-bar-controls">
-          <button aria-label="Close" onclick="toggle(game)"></button>
+          <button aria-label="Close" onclick="toggle('game')"></button>
         </div>
       </div>
       <div class="window-body">
@@ -424,9 +421,10 @@
    </div>
   </body>
     <script src="https://frutigeraeroarchive.org/javascript/aero-webring.js"></script>
-    <script src="./shmovemnt.js"></script>
-    <script src="./data.js"></script>
-    <script src="./game.js" defer></script>
+    <script src="./js/classes.js"></script>
+    <script src="./js/shmovement.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/game.js" defer></script>
     <style>
       
 

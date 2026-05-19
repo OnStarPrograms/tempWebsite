@@ -8,7 +8,7 @@ const SPRITE_WIDTH = 90;
 const SPRITE_HEIGHT = 110;
 const BORDER_WIDTH = 10;
 const SPACING_WIDTH = 10;
-//var spriteSheetURL = './data/NewPiskel.png';
+//var spriteSheetURL = '../data/NewPiskel.png';
 // create a new image from the spritesheet
 var image = new Image();
 image.src = spriteSheetURL;
@@ -21,9 +21,9 @@ secondImage.crossOrigin = true;
 
 
 var candleSprite = [new Image(), new Image(), new Image()];
-let candleSprite1 = './data/C300-1.png'; 
-let candleSprite2 = './data/C300-2.png'; 
-let candleSprite3 = './data/C300-3.png'; 
+let candleSprite1 = '../data/C300-1.png'; 
+let candleSprite2 = '../data/C300-2.png'; 
+let candleSprite3 = '../data/C300-3.png'; 
 candleSprite[0].src = candleSprite1;
 candleSprite[1].src = candleSprite2;
 candleSprite[2].src = candleSprite3;
@@ -32,11 +32,11 @@ candleSprite[2].src = candleSprite3;
 
 var handTapping = [new Image(), new Image(), new Image(), new Image(), new Image()];
  
-let hand1 = './data/frame_0_delay-0.17s.gif'; 
-let hand2 = './data/frame_1_delay-0.17s.gif'; 
-let hand3 = './data/frame_2_delay-0.17s.gif';  
-let hand4 = './data/frame_3_delay-0.17s.gif'; 
-let hand5 =  './data/frame_4_delay-0.17s.gif'; 
+let hand1 = '../data/frame_0_delay-0.17s.gif'; 
+let hand2 = '../data/frame_1_delay-0.17s.gif'; 
+let hand3 = '../data/frame_2_delay-0.17s.gif';  
+let hand4 = '../data/frame_3_delay-0.17s.gif'; 
+let hand5 =  '../data/frame_4_delay-0.17s.gif'; 
 
 handTapping[0].src = hand1; 
 handTapping[1].src = hand2;
@@ -47,11 +47,11 @@ handTapping[4].src = hand5;
 
 var heartTapping = [new Image(), new Image(), new Image(), new Image(), new Image()];
  
-let heart1 = './data/heart/frame_0_delay-0.2s.gif'; 
-let heart2 = './data/heart/frame_1_delay-0.1s.gif'; 
-let heart3 = './data/heart/frame_2_delay-0.1s.gif';  
-let heart4 = './data/heart/frame_3_delay-0.1s.gif'; 
-let heart5 =  './data/heart/frame_4_delay-0.1s.gif'; 
+let heart1 = '../data/heart/frame_0_delay-0.2s.gif'; 
+let heart2 = '../data/heart/frame_1_delay-0.1s.gif'; 
+let heart3 = '../data/heart/frame_2_delay-0.1s.gif';  
+let heart4 = '../data/heart/frame_3_delay-0.1s.gif'; 
+let heart5 =  '../data/heart/frame_4_delay-0.1s.gif'; 
 
 heartTapping[0].src = heart1; 
 heartTapping[1].src = heart2;
@@ -62,11 +62,11 @@ heartTapping[4].src = heart5;
 
 var CakeTapping = [new Image(), new Image(), new Image(), new Image(), new Image()];
  
-let Cake1 = './data/Cakes/AngelFood_Cake_NO_OUTLINE.png'; 
-let Cake2 = './data/Cakes/Rainbow_Cake_NO_OUTLINE.png'; 
-let Cake3 = './data/Cakes/Funfetti_Cake_NO_OUTLINE.png';  
-let Cake4 = './data/Cakes/Carrot_Cake_NO_OUTLINE.png'; 
-let Cake5 =  './data/Cakes/Strawberry_Cake_NO_OUTLINE.png'; 
+let Cake1 = '../data/Cakes/AngelFood_Cake_NO_OUTLINE.png'; 
+let Cake2 = '../data/Cakes/Rainbow_Cake_NO_OUTLINE.png'; 
+let Cake3 = '../data/Cakes/Funfetti_Cake_NO_OUTLINE.png';  
+let Cake4 = '../data/Cakes/Carrot_Cake_NO_OUTLINE.png'; 
+let Cake5 =  '../data/Cakes/Strawberry_Cake_NO_OUTLINE.png'; 
 
 CakeTapping[0].src = Cake1; 
 CakeTapping[1].src = Cake2;
