@@ -16,10 +16,15 @@ body{
   position: absolute;
   left: 481px;
   top: 211px;
+  margin: 32px;
+  width: 250px
 
   /*animation-delay: 0s;*/
 }
 
+#chatroom_iframe{
+  border: none;
+}
 
 #story{
   position: absolute;
@@ -33,7 +38,7 @@ body{
   position: absolute;
   left: 120px;
   top: 180px;
-
+  margin: 32px; width: 324px
   /*animation-delay: .5s;*/
 }
 
@@ -41,15 +46,24 @@ body{
   position: absolute;
   left: 483px;
   top: 371px;
-
+  margin: 32px; 
+  width: 300px
   /*animation-delay: .5s;*/
 }
 
+#aero_ring{
+  margin: 32px; 
+  position: absolute;
+  left: 846px !important; 
+  top: 400px !important ;
+}
 
 #socials{
   position: absolute;
   left: 260px;
   top: 50px;
+  margin: 32px;
+  width: 390px
 
   /*animation-delay: .75s;*/
 }
@@ -57,22 +71,81 @@ body{
   position: absolute;
   left: 400px;
   top: 0px;
+  margin: 32px; 
+  width: 300px;
 }
 #game{
   position: absolute;
   left: 771px;
   top: 37px;
+  margin: 32px; 
+  width: 300px
   /*animation-delay: .25s;*/
 }
+
+.acab_ring{
+  image-rendering: pixelated;
+}
+
+.acab_link{
+  text-decoration: none;
+}
+
+#aero-ring a,
+#aero-ring a:visited {
+  display: flex !important;
+  justify-content: center !important;
+  text-align:center !important;
+  
+  box-sizing: border-box;
+  color: black !important;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  border: none;
+  background: #c0c0c0;
+  box-shadow: inset -1px -1px #0a0a0a,
+    inset 1px 1px #ffffff, inset -2px -2px #808080,
+    inset 2px 2px #dfdfdf;
+  border-radius: 0;
+
+  min-width: 75px;
+  min-height: 23px;
+  
+  padding: 0 12px;
+}
+
+#aero-ring a:not(:disabled):active {
+  box-shadow: inset -1px -1px #ffffff,
+    inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf,
+    inset 2px 2px #808080;
+}
+
+#aero-ring a:focus {
+  outline: 1px dotted #000000;
+  outline-offset: -4px;
+}
+
+
+.webring-container{
+  background: #0d7173;
+  width: fit-content;
+  padding: 5px;
+  display: inline-block;
+}
+
+#bottom{
+  position:absolute;
+  right:0; 
+  bottom:0;
+}
+
 @media (width < 876px){
 	
 #introduction{
   position: absolute;
   left: 0px;
   top: 0px;
-  animation-name: intro_anim;
-  animation-duration: 1s;
-  /*animation-delay: 0s;*/
+
 }
 
 
@@ -150,7 +223,11 @@ canvas {
 }
 
 #doom{
-    image-rendering: pixelated;
+  image-rendering: pixelated;
 }
 
+
+.field-row{
+  justify-content: flex-end
+}
 

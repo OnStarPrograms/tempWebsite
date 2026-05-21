@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aiden Thomas – Computer Engineering student at UF, Teaching Assistant, and developer specializing in C, C++, Python, and systems programming.">
@@ -9,12 +9,12 @@
     <title>Aiden Thomas</title>
     <link href="./css/98.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
-    <meta property="og:title" content="Aiden Thomas | Computer Engineer & Developer">
+    <meta property="og:title" content="Aiden Thomas | Computer Engineer &amp; Developer">
     <meta property="og:description" content="Portfolio of Aiden Thomas – UF Computer Engineering student, TA, and systems developer.">
     <meta property="og:url" content="https://starprograms.dev">
     <meta property="og:type" content="website">
     <link rel="canonical" href="https://starprograms.dev">
-<audio id="myAudio">
+</head><body id="body"><audio id="myAudio">
   <source src="./data/windows-98-error.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
@@ -42,22 +42,18 @@
   ]
 }
 </script>
-  </head>
-  <body id="body">
-    <div>
-    </div>
-    <div id="introduction" class="window" style="margin: 32px; width: 250px" >
+    <div id="introduction" class="window">
       <div class="title-bar" onmousedown="callBack('introduction')">
         <div class="title-bar-text">
             Introduction
         </div>
 
         <div class="title-bar-controls">
-          <button aria-label="Close" onclick="toggle('introduction')"></button>
+          <button type="submit" aria-label="Close" onclick="toggle('introduction')"></button>
         </div>
       </div>
       <div class="window-body">
-        <p id = "hello">Hello, world!</p>
+        <p id="hello">Hello, world!</p>
         <p>I'm <b>Aiden Thomas</b></p>
         <!-- <div class="field-row">
 
@@ -70,30 +66,30 @@
             <option>DoomGuy</option>
           </select>
         </div>
-        --> 
-        <section class="field-row" style="justify-content: flex-end">
-          <button value="sound" onclick="playAudio()">OK</button>
-          <button value="sound" onclick="playAudio()">Cancel</button>
+        -->
+        <section class="field-row">
+          <button type="submit" value="sound" onclick="playAudio()">OK</button>
+          <button type="submit" value="sound" onclick="playAudio()">Cancel</button>
         </section>
       </div>
     </div>
-    
-<div id="chatroom" class="window" style="margin: 32px; width: 324px">
+
+<div id="chatroom" class="window">
       <div class="title-bar" onmousedown="callBack('chatroom')">
         <div class="title-bar-text">
             Guestbook
         </div>
 
         <div class="title-bar-controls">
-          <button aria-label="Close" onclick="toggle('chatroom')"></button>
+          <button type="submit" aria-label="Close" onclick="toggle('chatroom')"></button>
         </div>
       </div>
       <div class="window-body">
         <ul class="tree-view">
 	    <li>
-         
-        <iframe src="./chatroom/index.html" title="chatroom" height="200" width="300" style="border: none;"></iframe>
-        
+
+        <iframe src="./chatroom/index.html" title="chatroom" height="200" width="300" id="chatroom_iframe"></iframe>
+
         </li>
         </ul>
 
@@ -108,115 +104,122 @@
             <option>DoomGuy</option>
           </select>
         </div>
-        --> 
+        -->
       </div>
     </div>
 
 
-  <div id="programmer" class="window prog" style="margin: 32px; width: 300px" >
-      <div class="title-bar" onmousedown="callBack('programmer')" >
+  <div id="programmer" class="window prog">
+      <div class="title-bar" onmousedown="callBack('programmer')">
         <div class="title-bar-text">
             Programmer
         </div>
 
         <div class="title-bar-controls">
-          <button aria-label="Close" onclick="toggle('programmer')"></button>
+          <button type="submit" aria-label="Close" onclick="toggle('programmer')"></button>
         </div>
       </div>
       <div class="window-body">
         <p>Here are some of my <b>Thoughts</b></p>
           <ul class="tree-view">
-      <li>
-        Hey, been a while since I updated this website. I'll start including a changelog :/.
-        <details>
-          <summary>
-            ChangeLog
-          </summary>
-          <ul>
-            <li>May 19, 2026: revamped the <b><a href="./js/shmovement.js">shmovement.js</a></b> to be a lot easier on system resources and smarter. A-lot smarter than the old <b><a href="./archive/old_shmovemnt.js">shmovement.js</a></b></li>
-          </ul>
-        </details>
-        <details>
-          <summary>
-            Plans
-          </summary>
-          <ul>
-            <li>Build a better <b><a href="./js/game.js">game.js</a></b> modeled after <b><a href="https://en.wikipedia.org/wiki/Durak" target="_blank">Durak</a></b></li>
-            <li>Make this site look a little more Windows 95 -esk, maybe add a task bar with some functionality, such as minesweeper.</li>
-            <li>Scaling pages, god those are needed. Esp. with computers w/ higher DPI</li>
-            <li>Add multiplayer functionality to something. most likely a game thats asyncronous, and syncronous. Need to practice my sys-architecture</li>
-          </ul>
-        </details>
-      </li>
-      <p>  
+            <li>
+              Hey, been a while since I updated this website. I'll start including a changelog :/.
+              <details>
+                <summary>
+                  ChangeLog
+                </summary>
+                <ul>
+                  <li>May 19, 2026: revamped the <b><a href="./js/shmovement.js">shmovement.js</a></b> to be a lot easier on system resources and smarter. A-lot smarter than the old <b><a href="./archive/old_shmovemnt.js">shmovement.js</a></b></li>
+                </ul>
+              </details>
+              <details>
+                <summary>
+                  Plans
+                </summary>
+                <ul>
+                  <li>Build a better <b><a href="./js/game.js">game.js</a></b> modeled after <b><a href="https://en.wikipedia.org/wiki/Durak" target="_blank">Durak</a></b></li>
+                  <li>Make this site look a little more Windows 95 -esk, maybe add a task bar with some functionality, such as minesweeper.</li>
+                  <li>Scaling pages, god those are needed. Esp. with computers w/ higher DPI</li>
+                  <li>Add multiplayer functionality to something. most likely a game thats asyncronous, and syncronous. Need to practice my sys-architecture</li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <p>
+                My internship is not what I've been expecting, it's definitely a change in pace from when I first started my journey with programming.
+                <br>
+                Mental state has also been in a fairly steep decline lately, IDK how to say, but, lonely(?). I don't really have many friends, and the friends I do have are all gone.
+                <br>
+                <br>
+                Otherwise, Keep working hard stranger. I believe in you.
+              </p>
+            </li>
 
-        My internship is not what I've been expecting, it's definitely a change in pace from when I first started my journey with programming. 
-      <br>
-       Mental state has also been in a fairly steep decline lately, IDK how to say, but, lonely(?). I don't really have many friends, and the friends I do have are all gone. 
-      <br>
-        <br>
-        Otherwise, Keep working hard stranger. I believe in you.
-      </p>
-	    
 
-                    <li>
-              Projects
-              <ul>
-<li><details>
+            Projects
+            <li>
+              <details>
                 <summary>Mini-Vim</summary>
                 <ul>
                   <li>Built in C++</li>
-                  <li><details>
-                   <summary>Notable Features</summary> 
-                    <ul>
-                      <li>
-                        Hijacked Terminal /w Cross platform support
-                      </li>
-                      <li>
-                        Currently being used in the classroom setting
-                      </li>
-                      <li>
-                        Utilized advanced datastructures to store text optimally
-                      </li>
-                    </ul>
-                  </details></li> 
                   <li>
-                    <a href="https://codeberg.org/starprograms/mini-vim" target="_blank"><button>CodeBerg (github)</button></a>
+                    <details>
+                      <summary>Notable Features</summary>
+                      <ul>
+                        <li>
+                          Hijacked Terminal /w Cross platform support
+                        </li>
+                        <li>
+                          Currently being used in the classroom setting
+                        </li>
+                        <li>
+                          Utilized advanced datastructures to store text optimally
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li>
+                    <button type="submit" onclick="location.href='https://codeberg.org/starprograms/mini-vim'">CodeBerg (github)</button>
                   </li>
                 </ul>
               </details>
-</li>
-
-              <li><details>
+            </li>
+            <li>
+              <details>
                 <summary>little-C Interpreter</summary>
                 <ul>
-                  <li>Built in C++</li>
-                  <li><details>
-                   <summary>Notable Features</summary> 
-                    <ul>
-                      <li>
-                        automatic scoping
-                      </li>
-                      <li>
-                        working parsing and lexing
-                      </li>
-                      <li>
-                        utilizes multiple data types
-                      </li>
-                    </ul>
-                  </details></li> 
                   <li>
-                    <a href="https://codeberg.org/starprograms/littleC" target="_blank"><button>CodeBerg (github)</button></a>
+                    Built in C++
+                  </li>
+                  <li>
+                    <details>
+                      <summary>Notable Features</summary>
+                      <ul>
+                        <li>
+                          automatic scoping
+                        </li>
+                        <li>
+                          working parsing and lexing
+                        </li>
+                        <li>
+                          utilizes multiple data types
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li>
+                    <button type="submit" onclick="location.href='https://codeberg.org/starprograms/littleC'">CodeBerg (github)</button>
                   </li>
                 </ul>
               </details>
-              </li>
-                <li><details>
+            </li>
+            <li>
+              <details>
                 <summary>BrainFuck Interpreter</summary>
                 <ul>
                   <li>Built in C</li>
                   <li><details>
-                   <summary>Notable Features</summary> 
+                    <summary>Notable Features</summary>
                     <ul>
                       <li>
                         Working IO
@@ -228,19 +231,21 @@
                         Recursive
                       </li>
                     </ul>
-                  </details></li> 
-                  <li>
-                    <a href="https://codeberg.org/starprograms/Brainf-ck" target="_blank"><button>CodeBerg (github)</button></a>
-                  </li>
-                </ul>
-              </details>
-</li>
-                <li><details>
+                  </details>
+                </li>
+                <li>
+                  <button type="submit" onclick="location.href='https://codeberg.org/starprograms/Brainf-ck'">CodeBerg (github)</button>
+                </li>
+              </ul>
+            </details>
+          </li>
+            <li>
+              <details>
                 <summary>Cheating Go-Fish Bot</summary>
                 <ul>
                   <li>Built in Python</li>
                   <li><details>
-                   <summary>Notable Features</summary> 
+                    <summary>Notable Features</summary>
                     <ul>
                       <li>
                         Utilizes a string quirk of the python Interpreter to pull data from a class object without knowing the variables before hand.
@@ -252,216 +257,148 @@
                         Go-Fish
                       </li>
                     </ul>
-                  </details></li> 
-                  <li>
-                    <a href="https://codeberg.org/starprograms/CheatingGoFish" target="_blank"><button>CodeBerg (github)</button></a>
-                  </li>
-                </ul>
-              </details></li>
+                  </details>
+                </li>
+                <li>
+                  <button type="submit" onclick="location.href='https://codeberg.org/starprograms/CheatingGoFish'">CodeBerg (github)</button>
+                </li>
               </ul>
-          </ul>
-        <section class="field-row" style="justify-content: flex-end">
-        </section>
+            </details>
+          </li>
+        </ul>
+      <section class="field-row"></section>
+    </div>
+  </div>
+
+
+
+  <div id="socials" class="window socials">
+    <div class="title-bar" onmousedown="callBack('socials')">
+      <div class="title-bar-text">
+          Socials
+      </div>
+
+      <div class="title-bar-controls">
+        <button type="submit" aria-label="Close" onclick="toggle('socials')"></button>
       </div>
     </div>
+    <div class="window-body">
+      <fieldset>
+        <legend>Socials</legend>
+        <button type="submit" onclick="location.href='https://codeberg.org/starprograms'">CodeBerg (github)</button>
+        <button type="submit" onclick="location.href='https://www.linkedin.com/in/aiden-programs'">linked-in</button>
+        <button type="submit" onclick="location.href='mailto:thomas.aiden@starprograms.dev'">E-mail</button>
+        <button type="submit" onclick="location.href='./Aiden_Thomas__Resume.pdf'">Resume</button>
 
-
-
-  <div id="socials" class="window socials" style="margin: 32px; width: 390px">
-      <div class="title-bar" onmousedown="callBack('socials')" >
-        <div class="title-bar-text">
-            Socials
-        </div>
-
-        <div class="title-bar-controls">
-          <button aria-label="Close" onclick="toggle('socials')"></button>
-        </div>
+      </fieldset>
+      <section class="field-row"></section>
+    </div>
+  </div>
+  <div class="window" id="aero_ring">
+    <div class="title-bar" onmousedown="callBack('aero_ring')">
+      <div class="title-bar-text">
+          Webring
       </div>
-      <div class="window-body">
-         <fieldset>
-          <legend>Socials</legend>
-          <a href="https://codeberg.org/starprograms" target="_blank"><button>CodeBerg (github)</button></a>
-          <a href="https://www.linkedin.com/in/aiden-programs" target="_blank"><button>linked-in</button></a>
-	  <a href="mailto:thomas.aiden@starprograms.dev" target="_blank"><button>E-mail</button></a>
-          <a href="./Aiden_Thomas__Resume.pdf" target="_blank"><button>Resume</button></a>
 
-         </fieldset> 
-        <section class="field-row" style="justify-content: flex-end">
-        </section>
+      <div class="title-bar-controls">
+        <button type="submit" aria-label="Close" onclick="toggle('aero_ring')"></button>
       </div>
     </div>
-    <div class="window" id="aero_ring" style="margin: 32px; position: absolute; left: 846px; top: 400px;" >
-      <div class="title-bar" onmousedown="callBack('aero_ring')" >
-        <div class="title-bar-text">
-            Webring
-        </div>
+    <div id="aero-ring"></div>
+  </div>
 
-        <div class="title-bar-controls">
-          <button aria-label="Close" onclick="toggle('aero_ring')"></button>
-        </div>
-      </div>
-      <div id="aero-ring">
-      
-      </div>
-    </div> 
-    
-
-  <div id="rules" class="window rule hidden" style="margin: 32px; width: 300px;" onmouseup="moverulesEnd()">
-      <div class="title-bar" onmousedown="moverulesStart()" >
+  <div id="rules" class="window rule hidden" onmouseup="moverulesEnd()">
+      <div class="title-bar" onmousedown="moverulesStart()">
         <div class="title-bar-text">
             Rules
         </div>
 
         <div class="title-bar-controls">
-          <button aria-label="Close" onclick="toggleRules()"></button>
+          <button type="submit" aria-label="Close" onclick="toggleRules()"></button>
         </div>
       </div>
       <div class="window-body">
          <fieldset>
           <legend><b>Beware The Tower</b></legend>
             <p>The tower seeks to stop your beating heart before you make it to the end</p>
-            </br>
+            <br>
             <p><b>The cards are the Key</b></p>
             <p>your cards can keep you safe</p>
           <p>the <b>campfire</b> can help <b>soothe your fear of the dark</b>, but bewarned,</p>
           <p>to attack one with fire, is the same as <b> attacking yourself </b></p>
-          <p>the <b>holy sword</b> can be your sword and your shield, but you might <b>lose track of time</b> 
+          <p>the <b>holy sword</b> can be your sword and your shield, but you might <b>lose track of time</b> </p>
           <p>to raise the <b>flag</b> is to <b>boister your army</b> to ravage this land, or to <b>call on a stronger defense</b></p>
           <p>to read your <b>heart</b> is seen as reading a book, though it <b>aids</b> you it can also <b>ail</b> you.</p>
-          <p>If you <b>give your heart to the tower</b> sometimes the <b>tower gives itself back</b></p> 
-         </fieldset> 
-        <section class="field-row" style="justify-content: flex-end">
+          <p>If you <b>give your heart to the tower</b> sometimes the <b>tower gives itself back</b></p>
+         </fieldset>
+        <section class="field-row">
         </section>
       </div>
     </div>
 
 
 
-  <div id="game" class="window game" style="margin: 32px; width: 300px" onmouseup="moveGameEnd()">
-      <div class="title-bar" onmousedown="callBack('game')" >
+  <div id="game" class="window game" onmouseup="moveGameEnd()">
+      <div class="title-bar" onmousedown="callBack('game')">
         <div class="title-bar-text">
             Game
         </div>
 
         <div class="title-bar-controls">
-          <button aria-label="Close" onclick="toggle('game')"></button>
+          <button type="submit" aria-label="Close" onclick="toggle('game')"></button>
         </div>
       </div>
       <div class="window-body">
-        <canvas id="doom" >
+        <canvas id="doom"></canvas>
 
-        
-        </canvas>
-        
-        <section class="field-row" style="justify-content: flex-end">
-            <button onclick="toggleRules()">Rules</button>
-          <button onclick="myEnemy.revealHand('defense', myPlayer)">Submit Defense</button>
-            <button onclick="myEnemy.revealHand('offense', myPlayer)">Submit Offense</button>
+        <section class="field-row">
+          <button type="submit" onclick="toggleRules()">Rules</button>
+          <button type="submit" onclick="myEnemy.revealHand('defense', myPlayer)">Submit Defense</button>
+          <button type="submit" onclick="myEnemy.revealHand('offense', myPlayer)">Submit Offense</button>
         </section>
       </div>
     </div>
-    
 
 
-   <div style="position:absolute;right:0; bottom:0;">
-   	
-	<img src="data/censorship.gif" alt="https://cyber.dabamos.de/88x31/">
-	 <map name="noaimini14">
-<area href="https://baccyflap.com/noai" shape="rect" coords="21,0,47,30" target="_blank" alt="no ai webring" title="no ai webring">
-<area href="https://baccyflap.com/noai/?prv&s=stp" target="_top" shape="rect" coords="1,13,19,29" alt="previous" title="previous">
-<area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="59,7,66,16" alt="random" title="random">
-<area href="https://baccyflap.com/noai/?nxt&s=stp" target="_top" shape="rect" coords="68,1,86,17" alt="next" title="next">
-</map>
-<img usemap="#noaimini14" src="https://baccyflap.com/noai/miniwidget14.gif" alt="a bluegreen rectangle showing the words the NO AI webring, with NO AI being written by a fountain pen, all in the style of 16 bit Windows 95 icons. to either side are two equally Windows-95-style cursors pointing left and right, softly bouncing up and down. in between it all is a small black question mark"> 
-	<br/>
-	<img src="data/made_with_windows.gif" alt="https://88x31.kate.pet/">
- 	<a href="https://frutigeraeroarchive.org/"><img src="https://frutigeraeroarchive.org/images/buttons/frutigeraeroarchive_button_alt.png" alt="Frutiger Aero Archive"></a>
- 	<!-- 
-    Note: the webring container is only here for demonstration purposes. If
-    this is on a webpage with a dark background, this should not be nesseceary.
 
-    The text-decoration can also be disabled in another way for these links,
-    this is just for copy, paste, works without additional CSS :)
--->
-<div
-    class="webring-container"
-    style="
-        background: #0d7173;
-        width: fit-content;
-        padding: 5px;
-        display: inline-block;
-    "
->
-    <a href="//ring.acab.dev/prev/fb484138fb" style="text-decoration: none">
-        <img
-            style="image-rendering: pixelated" 
-            src="//ring.acab.dev/img/webring_88_31_01.png" 
-            alt="The first third of a 88x31 with a glider and arrow going to
-            the left"
-        />
-    </a>
-    <a href="//ring.acab.dev" style="text-decoration: none">
-        <img
-            style="image-rendering: pixelated"
-            src="//ring.acab.dev/img/webring_88_31_02.png"
-            alt="The middle third of a 88x31 with the text Hacker Webring on
-            it. In the background of the text is a ring with an offset shadow."
-        />
-    </a>
-    <a href="//ring.acab.dev/next/fb484138fb" style="text-decoration: none">
-        <img
-            style="image-rendering: pixelated"
-            src="//ring.acab.dev/img/webring_88_31_03.png"
-            alt="The last third of a 88x31 with a glider and arrow going to the
-            right"
-        />
-    </a>
-</div>
- 	<img src="data/word.gif" alt="https://cyber.dabamos.de/88x31/">
-   </div>
-  </body>
+   <div id="bottom">
+	  <img src="data/censorship.gif" alt="https://cyber.dabamos.de/88x31/">
+	  <map name="noaimini14">
+      <area href="https://baccyflap.com/noai" shape="rect" coords="21,0,47,30" target="_blank" alt="no ai webring" title="no ai webring">
+      <area href="https://baccyflap.com/noai/?prv&amp;s=stp" target="_top" shape="rect" coords="1,13,19,29" alt="previous" title="previous">
+      <area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="59,7,66,16" alt="random" title="random">
+      <area href="https://baccyflap.com/noai/?nxt&amp;s=stp" target="_top" shape="rect" coords="68,1,86,17" alt="next" title="next">
+    </map>
+    <img usemap="#noaimini14" src="https://baccyflap.com/noai/miniwidget14.gif" alt="a bluegreen rectangle showing the words the NO AI webring, with NO AI being written by a fountain pen, all in the style of 16 bit Windows 95 icons. to either side are two equally Windows-95-style cursors pointing left and right, softly bouncing up and down. in between it all is a small black question mark">
+	  <br>
+	  <img src="data/made_with_windows.gif" alt="https://88x31.kate.pet/">
+ 	  <a href="https://frutigeraeroarchive.org/"><img src="https://frutigeraeroarchive.org/images/buttons/frutigeraeroarchive_button_alt.png" alt="Frutiger Aero Archive"></a>
+    <!-- 
+      Note: the webring container is only here for demonstration purposes. If
+      this is on a webpage with a dark background, this should not be nesseceary.
+
+      The text-decoration can also be disabled in another way for these links,
+      this is just for copy, paste, works without additional CSS :)
+    -->
+
+    <div class="webring-container">
+      <a href="//ring.acab.dev/prev/fb484138fb">
+        <img class="acab_ring" src="//ring.acab.dev/img/webring_88_31_01.png" alt="The first third of a 88x31 with a glider and arrow going to the left">
+      </a>
+      <a href="//ring.acab.dev">
+        <img class="acab_ring" src="//ring.acab.dev/img/webring_88_31_02.png" alt="The middle third of a 88x31 with the text Hacker Webring on it. In the background of the text is a ring with an offset shadow.">
+      </a>
+      <a href="//ring.acab.dev/next/fb484138fb">
+        <img class="acab_ring" src="//ring.acab.dev/img/webring_88_31_03.png" alt="The last third of a 88x31 with a glider and arrow going to the right">
+      </a>
+    </div>
+    <img src="data/word.gif" alt="https://cyber.dabamos.de/88x31/">
+  </div>
+
     <script src="https://frutigeraeroarchive.org/javascript/aero-webring.js"></script>
     <script src="./js/classes.js"></script>
     <script src="./js/shmovement.js"></script>
     <script src="./js/data.js"></script>
     <script src="./js/game.js" defer></script>
-    <style>
-      
-
-      #aero-ring a,
-      #aero-ring a:visited {
-        display: flex !important;
-        justify-content: center !important;
-        text-align:center !important;
-        
-        box-sizing: border-box;
-        color: black !important;
-        text-decoration: none !important;
-        box-sizing: border-box;
-        border: none;
-        background: #c0c0c0;
-        box-shadow: inset -1px -1px #0a0a0a,
-          inset 1px 1px #ffffff, inset -2px -2px #808080,
-          inset 2px 2px #dfdfdf;
-        border-radius: 0;
-
-        min-width: 75px;
-        min-height: 23px;
-        
-        padding: 0 12px;
-      }
-
-      #aero-ring a:not(:disabled):active {
-        box-shadow: inset -1px -1px #ffffff,
-          inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf,
-          inset 2px 2px #808080;
-      }
-
-      #aero-ring a:focus {
-        outline: 1px dotted #000000;
-        outline-offset: -4px;
-      }
-
-      
-    </style>
+  </body>
 </html>
