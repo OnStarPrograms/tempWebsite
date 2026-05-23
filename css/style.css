@@ -2,6 +2,7 @@
 
 body{
   background: #0D7173;    
+  overflow-y: hidden;
 }
 
 #introduction p{
@@ -14,8 +15,8 @@ body{
 
 #introduction{
   position: absolute;
-  left: 481px;
-  top: 211px;
+  left: calc(50%-32px);
+  top: calc(50%-32px);
   margin: 32px;
   width: 250px
 
@@ -127,16 +128,91 @@ body{
 
 
 .webring-container{
-  background: #0d7173;
+  background: #c0c0c0;
   width: fit-content;
   padding: 5px;
   display: inline-block;
 }
 
 #bottom{
+
   position:absolute;
   right:0; 
   bottom:0;
+  background-color:#c0c0c0;
+  width:100%;
+  max-height: 10%;
+  height: 6%;
+
+}
+
+#bottom #right{
+  /* position: inherit; */
+  float:right;
+  align-items: center;
+
+}
+
+#menu{
+  width:15%;
+  height:50%;
+  background-color: #c0c0c0;
+  position:absolute;
+  bottom:0;
+  margin:0;
+  left:0;
+}
+
+
+#menu > #blue_side_bar{
+  /* display: table-cell; */
+  height:100%;
+  width:10%;
+  float:left;
+
+    background: linear-gradient(
+    0deg,
+    #000080,
+    #1084d0
+  );
+}
+
+#menu > #toggle_buttons{
+  /* display: table; */
+  float:right;
+  width:90%;
+  position:absolute;
+  right:0;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  /* margin:auto; */
+  min-height: 100vh;
+}
+
+#menu > #toggle_buttons > .button{
+  width:100%;
+  height:fit-content;
+  max-height: 100vh;
+
+}
+
+#start_menu {
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin:auto;
+}
+#start_menu_button{
+  height:90%;
+  width:7%;
+  display: inline-block;
+  padding: .1%;
+  margin:.2%;
+  margin-bottom: .4%;
+  justify-content: center;
 }
 
 @media (width < 876px){

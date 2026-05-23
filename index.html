@@ -360,45 +360,72 @@
     </div>
 
 
-
-   <div id="bottom">
-	  <img src="data/censorship.gif" alt="https://cyber.dabamos.de/88x31/">
-	  <map name="noaimini14">
-      <area href="https://baccyflap.com/noai" shape="rect" coords="21,0,47,30" target="_blank" alt="no ai webring" title="no ai webring">
-      <area href="https://baccyflap.com/noai/?prv&amp;s=stp" target="_top" shape="rect" coords="1,13,19,29" alt="previous" title="previous">
-      <area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="59,7,66,16" alt="random" title="random">
-      <area href="https://baccyflap.com/noai/?nxt&amp;s=stp" target="_top" shape="rect" coords="68,1,86,17" alt="next" title="next">
-    </map>
-    <img usemap="#noaimini14" src="https://baccyflap.com/noai/miniwidget14.gif" alt="a bluegreen rectangle showing the words the NO AI webring, with NO AI being written by a fountain pen, all in the style of 16 bit Windows 95 icons. to either side are two equally Windows-95-style cursors pointing left and right, softly bouncing up and down. in between it all is a small black question mark">
-	  <br>
-	  <img src="data/made_with_windows.gif" alt="https://88x31.kate.pet/">
- 	  <a href="https://frutigeraeroarchive.org/"><img src="https://frutigeraeroarchive.org/images/buttons/frutigeraeroarchive_button_alt.png" alt="Frutiger Aero Archive"></a>
-    <!-- 
-      Note: the webring container is only here for demonstration purposes. If
-      this is on a webpage with a dark background, this should not be nesseceary.
-
-      The text-decoration can also be disabled in another way for these links,
-      this is just for copy, paste, works without additional CSS :)
-    -->
-
-    <div class="webring-container">
-      <a href="//ring.acab.dev/prev/fb484138fb">
-        <img class="acab_ring" src="//ring.acab.dev/img/webring_88_31_01.png" alt="The first third of a 88x31 with a glider and arrow going to the left">
-      </a>
-      <a href="//ring.acab.dev">
-        <img class="acab_ring" src="//ring.acab.dev/img/webring_88_31_02.png" alt="The middle third of a 88x31 with the text Hacker Webring on it. In the background of the text is a ring with an offset shadow.">
-      </a>
-      <a href="//ring.acab.dev/next/fb484138fb">
-        <img class="acab_ring" src="//ring.acab.dev/img/webring_88_31_03.png" alt="The last third of a 88x31 with a glider and arrow going to the right">
-      </a>
+    <div id="menu">
+      <div id="blue_side_bar"></div>
+      <div id="toggle_buttons">
+        <button type="submit" onclick="toggle('introduction')" class="button">
+          Introduction
+        </button>
+        <button type="submit" onclick="toggle('chatroom')" class="button">
+          Guestbook
+        </button>
+        <button type="submit" onclick="toggle('socials')" class="button">
+          Contact Me
+        </button>
+        <button type="submit" onclick="toggle('programmer')" class="button">
+          Musings
+        </button>
+        <button type="submit" onclick="toggle('aero_ring')" class="button">
+          Aero Webring
+        </button>
+        <button type="submit" onclick="toggle('game')" class="button">
+          minesweeper
+        </button>
+      </div>
     </div>
-    <img src="data/word.gif" alt="https://cyber.dabamos.de/88x31/">
-  </div>
+    <div id="bottom">
+      <button type="submit" id="start_menu_button" onclick="toggle_menu()">
+        <img src="data/Start_button_Windows_4.00.337.png" alt="windows start menu" id="start_menu">
+      </button>
+      <!-- <img src="data/censorship.gif" alt="https://cyber.dabamos.de/88x31/"> -->
+      <div id="right">
+        <map name="noaimini14">
+          <area href="https://baccyflap.com/noai" shape="rect" coords="21,0,47,30" target="_blank" alt="no ai webring" title="no ai webring">
+          <area href="https://baccyflap.com/noai/?prv&amp;s=stp" target="_top" shape="rect" coords="1,13,19,29" alt="previous" title="previous">
+          <area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="59,7,66,16" alt="random" title="random">
+          <area href="https://baccyflap.com/noai/?nxt&amp;s=stp" target="_top" shape="rect" coords="68,1,86,17" alt="next" title="next">
+        </map>
+        <img usemap="#noaimini14" src="https://baccyflap.com/noai/miniwidget14.gif" alt="a bluegreen rectangle showing the words the NO AI webring, with NO AI being written by a fountain pen, all in the style of 16 bit Windows 95 icons. to either side are two equally Windows-95-style cursors pointing left and right, softly bouncing up and down. in between it all is a small black question mark">
+        <!-- <img src="data/made_with_windows.gif" alt="https://88x31.kate.pet/"> -->
+        <a href="https://frutigeraeroarchive.org/"><img src="https://frutigeraeroarchive.org/images/buttons/frutigeraeroarchive_button_alt.png" alt="Frutiger Aero Archive"></a>
+        <!-- 
+          Note: the webring container is only here for demonstration purposes. If
+          this is on a webpage with a dark background, this should not be nesseceary.
+
+          The text-decoration can also be disabled in another way for these links,
+          this is just for copy, paste, works without additional CSS :)
+        -->
+
+        <div class="webring-container">
+          <a href="//ring.acab.dev/prev/fb484138fb">
+            <img class="acab_ring" src="//ring.acab.dev/img/webring_88_31_01.png" alt="The first third of a 88x31 with a glider and arrow going to the left">
+          </a>
+          <a href="//ring.acab.dev">
+            <img class="acab_ring" src="//ring.acab.dev/img/webring_88_31_02.png" alt="The middle third of a 88x31 with the text Hacker Webring on it. In the background of the text is a ring with an offset shadow.">
+          </a>
+          <a href="//ring.acab.dev/next/fb484138fb">
+            <img class="acab_ring" src="//ring.acab.dev/img/webring_88_31_03.png" alt="The last third of a 88x31 with a glider and arrow going to the right">
+          </a>
+        </div>
+        <img src="data/word.gif" alt="https://cyber.dabamos.de/88x31/">
+      </div>
+    </div>
 
     <script src="https://frutigeraeroarchive.org/javascript/aero-webring.js"></script>
     <script src="./js/classes.js"></script>
     <script src="./js/shmovement.js"></script>
     <script src="./js/data.js"></script>
     <script src="./js/game.js" defer></script>
+    <script src="./js/menu.js" ></script>
   </body>
 </html>

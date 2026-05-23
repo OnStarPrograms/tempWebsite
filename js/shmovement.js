@@ -50,7 +50,9 @@ document.addEventListener('mousedown', function(event) {
 });
 
 document.addEventListener('mouseup', function(event) {
-    if (magic_mouse.track === true){
+    if (magic_mouse.track === true
+        && active_page !== ''
+    ){
         let update_page = pages.find((x) => x.name === active_page);
         update_page.dom_object.style.zIndex = 4;
         active_page = '';
